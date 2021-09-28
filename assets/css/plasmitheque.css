@@ -1,0 +1,16 @@
+#txt::-webkit-inner-spin-button,
+#txt::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#txt {
+    border:none;
+    outline:none;
+    width: 50px;
+}
+
+label[for="txt"] {
+    border:solid 2px #d5d5d5;
+    padding: 0 0 0 5px;
+}

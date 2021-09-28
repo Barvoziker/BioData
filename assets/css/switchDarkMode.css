@@ -1,0 +1,40 @@
+.switch {
+    margin-right: 50px;
+    z-index: 1;
+}
+
+.switch div {
+    position: relative;
+    display: block;
+    background: #E9E5DE;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-image: url('../img/sun.png');
+    background-size: 100%;
+    transition: 0.9s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+#checkbox:checked+.slider {
+    transform: translateX(8px);
+    background-color: transparent;
+    background-image: url('../img/moon.png');
+    background-size: 100%;
+}
+
+
+

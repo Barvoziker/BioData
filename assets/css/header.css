@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+/* initialize fonts */
+@font-face {
+    font-family: "IBM-Medium";
+    src: url("../fonts/IBMPlexSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "IBM-Bold";
+    src: url("../fonts/IBMPlexSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+/* set size and center options to headerContainer */
+#headerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+/* size of Proteus logo */
+#headerLogo {
+    flex: 1;
+}
+
+/* a href text options */
+.menuText {
+    color: rgb(35, 40, 50);
+}
+
+/* organize a href elements */
+.menuElements {
+    padding-right: 50px;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 1em;
+}
+
+/* a href for Proteus logo */
+#headerLogo a {
+    width: 200px;
+}
+
+/* logo Proteus size */
+#logoProteus {
+    margin: 15px;
+    width: 200px;
+    height: auto;
+    flex:1;
+}
+
+/* user profile icon */
+#userIcon {
+    flex:0;
+    padding: 10px;
+}
+
+
+#profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#userIcon {
+    padding: 0 80px 0 0;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.menuElements a:before, .menuElements a:after {
+    content: '';
+    border-bottom: solid 2px #3ab396;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+}
+
+.menuElements a:before { left: 0; }
+.menuElements a:after { right: 0; }
+
+.menuElements a:hover:before, .menuElements a:hover:after {
+    width: 50%;
+}
+
+.menuElements a:before, .menuElements a:after {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
